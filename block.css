@@ -1,0 +1,19 @@
+#a{
+    background-color: cornflowerblue;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    height:max-content;
+    border: 5px;
+    border-radius: 10%;
+}
+
+#b{
+    background-color:firebrick;
+    font-weight: bold;
+    
+}
+
+span{color: rgb(233, 16, 16);
+    font-size: 20px;
+}

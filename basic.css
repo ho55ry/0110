@@ -1,0 +1,21 @@
+body > h5 {
+    color: blue;
+    font-size: 30px;
+}
+
+ul>li{
+    color: cadetblue;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+ul>ol{
+    color:maroon;
+    font-size: 18px;
+}
+
+#dessert>li {
+    color: black;
+}
+
+/* 나중에 크롤링할때도 유용하게 쓰임 */
