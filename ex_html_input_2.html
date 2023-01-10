@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> MY WEB </title>
+        <script>
+            function doing(){
+                // input 태그 객체의 현재 value 속성을 읽어와서 저장하기
+                let a=document.getElementById('inputA').value;
+                let b=document.getElementById('inputB').value;
+                // let ab=Number(a)+Number(b)
+                // 확인용 디버깅
+                console.log(a);
+                console.log(b);
+                // 계산 결과를 html 페이지에 추가
+                document.getElementById('valueA').innerHTML=a;
+                document.getElementById('valueB').innerHTML=b;
+                document.getElementById('valueC').innerHTML=Number(a)+Number(b);
+            }
+        </script>
+    </head>
+    <body>
+        <label for="inputA">a</label>
+        <input id="inputA" value=1 onkeyup="doing()">
+
+        <label for="inputB">b</label>
+        <input id="inputB" value=2 onkeyup="doing()">
+
+        <p><span id="valueA">1</span>+<span id="valueB">2</span>=<span id="valueC">3</span>입니다. </p>
+    </body>
+</html>

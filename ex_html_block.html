@@ -1,0 +1,38 @@
+<!--===============================================================
+HTML 태그 - 블럭 및 공간 지정
+* Block
+웹 페이지 안에서 사격 영역 지정하는 태그들
+- <div> ~ </div>
+    > 다른 HTML 태그들을 묶어서 하나의 블록 지정
+    > 기본 : 너비 - 전체, 높이 - 내부 내용물이 출력될 정도
+- <span> ~ </span>
+    > 인라인 태그 
+    > 텍스트에서 강조하고 싶은 부분
+    > CSS에서 많이 사용
+- <iframe> ~ </iframe>
+    > 인라인 프레임의 약자
+    > 웹페이지 안에 웹페이지
+    > 속성 src : 삽입 웹페이지 URL
+    > 속성 title, width, height
+=================================================================-->
+<!doctype html>
+<html>
+    <head>
+        <title> MY WEB </title>
+        <link href="../styles/block.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="a">
+            <h1> NewJeans</h1>
+            B<span>lock</span> A<br>
+            Good<br>
+            Luck<br>
+        </div>
+        <div id="b">
+            Block B
+        </div>
+        <h3> iFrame 살펴보기 </h3><hr>
+        <iframe src="https://www.daum.net" frameborder="0" width="60%" height="90%"></iframe>
+        <!-- <iframe src=~~~~~/> 이렇게 끝내도됨 중간에 내용쓸거없으면-->
+    </body>
+</html>

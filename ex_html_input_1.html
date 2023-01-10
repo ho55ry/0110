@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> MY WEB </title>
+        <script>
+            function calc(){
+                let a = document.getElementById('inputA').value;
+                console.log(a);
+                let b = document.getElementById('inputB').value;
+                console.log(b);
+                
+                document.getElementById('valueA').innerHTML=a;
+                document.getElementById('valueB').innerHTML=b;
+                document.getElementById('valueC').innerHTML=Number(a)+Number(b);
+            }
+        </script>
+    </head>
+    <body>
+        <label for="inputA">a</label>
+        <input id="inputA" value=0>
+
+        <label for="inputB">b</label>
+        <input id="inputB" value=0>
+
+        <input type="button" value="계산" onclick="calc()"><br>
+
+        <p><span id="valueA">0</span> + <span id="valueB">0</span> = <span id="valueC">0</span>입니다. </p>
+    </body>
+</html>
